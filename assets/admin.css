@@ -1,0 +1,9 @@
+.collapse{
+    justify-content: end;
+}
+.input-group-text{
+    min-width: 150px;
+}
+.c-pointer{
+    cursor: pointer;
+}

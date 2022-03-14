@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Poppins:wght@200;300;400;800&display=swap');
+:root{
+    --deep-background: #080f24;
+    --dbg-whiter: #141f40;
+    --red: #ff034a;
+    --cyan: #00f0ff;
+    --blue: #0C8CFE;
+    --purple: #8400FF;
+}   
+.list-img{
+    height: 50px;
+    background-color: gainsboro;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    aspect-ratio: 16 / 9;
+}
+body{
+    background-color: var(--deep-background);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/************* header ************/
+.header{
+    height: 100vh;
+    position: relative;
+}
+.header-img{
+    height: 100%;
+    top: 0;
+    position: fixed;
+    z-index: -1;
+    filter: brightness(0.3);
+    object-fit: cover;
+    width: 100%;
+}
+.navbar-brand{
+    font-size: 32px;
+    font-weight: 800;
+    background: linear-gradient(to right, var(--red), var(--cyan));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.welcome{
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1
+}
+.welcome-text{
+    max-width: 700px;
+}
+.welcome-title{
+    color: white;
+    font-size: 64px;
+    font-weight: bold;
+    background: linear-gradient(to right, var(--blue), var(--cyan));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.welcome-p{
+    color: white;
+}
+@media screen and (max-width: 992px) {
+    .welcome-title{
+        font-size: 44px;
+    }
+}
+/* .navbar{
+    background-color: var(--deep-background);
+} */
+
+/**********hero**************/
+.hero{
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    background-color: var(--deep-background);
+}
+/************ card **************/
+.cu-card{
+    position: relative;
+}
+.cu-card-header:hover{
+    box-shadow: 0px 0px 10px #00f0ff;
+    cursor: pointer;
+}
+.cu-card-header{
+    width: 100%;
+    aspect-ratio: 9 / 12;
+    background: linear-gradient(45deg, #0C8CFE, #EA3329, #FFD321, #8400FF, #00F0FF);
+    display: grid;
+    place-items: center;
+}
+.card-relative{
+    aspect-ratio: 9 / 12;
+    width: calc(100% - 4px);
+    position: relative;
+    background-color: var(--red);
+}
+.card-relative > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card-infos{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info-box{
+    padding: 0 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.info-box-left{
+    color: var(--cyan);
+}
+
+.card-title{
+    background: linear-gradient(to right, var(--cyan), var(--purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card-title:hover{
+    text-shadow: 0px 0px 10px #00f0ff;
+    cursor: pointer;
+}
+/**************right-side***************/
+.right-side{
+    min-width: 350px;
+    margin-left: 8px;
+}
+.filter-box{
+    background-color: var(--dbg-whiter);
+    padding: 8px;
+    margin-top: 18px;
+}
